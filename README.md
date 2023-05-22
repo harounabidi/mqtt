@@ -5,14 +5,15 @@ This repository contains a Python script for interacting with the MaQiaTTo onlin
 ## How to use
 
 1. Create MaQiaTTo account at [maqiatto.com](https://www.maqiatto.com/).
-2. Create the necessary topics. For example, you can create a topic named "motor_speed" (the provided example assumes this topic exists).
+2. Create the necessary topics. For example, you can create a topic named "door" (the provided example assumes this topic exists).
 
 ### Clone the Repository
 
 ```
 git clone https://github.com/harounabidi/mqtt.git
-cd mqtt
 ```
+
+or download [here](https://github.com/harounabidi/mqtt/archive/refs/heads/main.zip)
 
 ### Install requirements
 
@@ -26,7 +27,7 @@ pip install -r requirements.txt
 
 1. Copy the contents of `.env.example` file.
 2. Create a new file named `.env`.
-3. Paste the copied contents into the `.env` file
+3. Paste the copied contents into the `.env` file.
 4. Replace the placeholders with your actual MaQiaTTo credentials. Replace `username` with your MaQiaTTo username and `password` with your MaQiaTTo password.
 
 Example .env file:
@@ -41,12 +42,8 @@ BROKER_PASSWORD=your_password
 To publish messages to a topic using a web interface, run the following command:
 
 ```
-streamlit run mqtt_publish.py
+python mqtt_publish.py
 ```
-
-This will start a Streamlit server and open a web browser window at `http://localhost:8501`. Use the web interface to publish messages to the desired topic.
-
-Note: Streamlit is used solely for providing the web interface.
 
 ### Subscriber
 
