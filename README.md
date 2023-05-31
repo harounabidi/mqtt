@@ -39,13 +39,17 @@ BROKER_PASSWORD=your_password
 
 ### Publisher
 
-To publish messages to a topic using a web interface, run the following command:
+![image info](./images/publisher.png)
+
+To publish messages to a topic using an arduino RFID, run the following command:
 
 ```
 python mqtt_publish.py
 ```
 
 ### Subscriber
+
+![image info](./images/subscriber.png)
 
 To subscribe to a topic and receive messages, run the following command:
 
